@@ -1,1 +1,36 @@
-# aws-infrastrucure-workflow
+
+
+## AWS Infrastrucure | Workflow
+Based on the structure and typical patterns (and aligned with AWS best practices):
+
+
+
+🎯 Architecture Overview
+```
+EKS (Kubernetes cluster)
+RDS (Postgres)
+ElastiCache (Redis)
+Monitoring (CloudWatch, SNS)
+GitHub Actions CI/CD
+```
+
+
+🧱 Features
+```
+✅ Fully automated provisioning with Terraform
+✅ High availability using multiple subnets in different Availability Zones
+✅ Secure connectivity between Lambda and RDS
+✅ Configurable environment variables for database credentials
+✅ Easy to extend for other JSON data source
+```
+
+
+
+🚀 Deployment Options
+```
+terraform init
+terraform validate
+terraform plan -var-file="template.tfvars"
+terraform apply -var-file="template.tfvars" -auto-approve
+```
+
