@@ -1,5 +1,6 @@
 # Development Environment Configuration
-
+# Required
+owner_email = "your-email@company.com"
 environment = "dev"
 
 # EKS
