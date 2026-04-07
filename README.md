@@ -32,5 +32,9 @@ terraform init
 terraform validate
 terraform plan -var-file="template.tfvars"
 terraform apply -var-file="template.tfvars" -auto-approve
+
+# Development
+terraform apply -var-file=environments/dev.tfvars 
+terraform apply -var-file=environments/staging.tfvars
 ```
 
