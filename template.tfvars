@@ -17,11 +17,11 @@ availability_zones = ["us-west-2a", "us-west-2b"]
 eks_cluster_version        = "1.35"
 eks_node_instance_types    = ["t3.medium"]
 eks_endpoint_public_access = true       # Set to true only for dev with restricted CIDRs
-eks_public_access_cidrs    = ["0.0.0.0/0"]          # e.g., ["203.0.113.0/24"] — your office IP
+eks_public_access_cidrs    = ["0.0.0.0/0"] # e.g., ["203.0.113.0/24"] — your office IP
 
 # RDS
 rds_instance_class    = "db.t3.micro"   # Use db.r5.large+ for production
-rds_allocated_storage = 20               # GB — increase for production
+rds_allocated_storage = 20              # GB — increase for production
 db_name               = "appdb"
 db_username           = "dbadmin"
 
