@@ -49,10 +49,6 @@ module "rds" {
   kms_key_arn     = module.kms.rds_kms_key_arn
 
   tags = local.common_tags
-  depends_on = [
-    module.vpc,
-    module.kms
-  ]
 }
 
 module "eks" {
@@ -83,10 +79,6 @@ module "eks" {
   }
 
   tags = local.common_tags
-  depends_on = [
-    module.vpc,
-    module.kms
-  ]
 }
 
 module "alb" {
